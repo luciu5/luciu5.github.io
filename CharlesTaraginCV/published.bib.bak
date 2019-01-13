@@ -1,0 +1,47 @@
+% Encoding: UTF-8
+
+@Article{Froeb2018,
+  author   = {Luke M. Froeb and Vladimir Mares and Steven Tschantz and Charles Taragin},
+  title    = {{The simple algebra of surplus in private values open auctions: A nested logit merger model}},
+  journal  = {Economics Bulletin},
+  year     = {2018},
+  volume   = {38},
+  number   = {4},
+  pages    = {2304-2312},
+  abstract = {In a private values, open auction, we show that bidder surplus can be expressed as a simple difference between unconditional moments of order statistics. The strength of the result is its simplicity and generality, as we dispense with the typical assumptions of independence or symmetry. We show how to use the expression to derive closed-form expressions for the effects of a merger among bidders for any joint value distribution.},
+  keywords = {Surplus; Private-Values Auctions; Merger; Antitrust; Horizontal Anticompetitive Practices},
+  url      = {https://ideas.repec.org/a/ebl/ecbull/eb-18-00431.html},
+}
+
+@Article{Froeb2018a,
+  author   = {Luke M. Froeb and Russell W. Pittman and Charles S. Taragin and Steven Tschantz and Gregory J. Werden},
+  title    = {{Economics at the Antitrust Division: 2017–2018}},
+  journal  = {Review of Industrial Organization},
+  year     = {2018},
+  volume   = {53},
+  number   = {4},
+  pages    = {637-651},
+  month    = {December},
+  abstract = {Abstract This article describes some of the work of Antitrust Division economists over the past year, with a focus on modeling. It begins by illustrating the mapping from evidence to prediction using tools for assessing the effects of mergers using Bertrand, Cournot, and auction models. It then turns to two hot topics in competition policy: the implications of claims of increasing margins for merger enforcement and the validity of claims of increasing concentration. Finally, it considers how mergers affect prices in bargaining models.},
+  doi      = {10.1007/s11151-018-9662-8},
+  keywords = {Antitrust; Bargaining; Concentration; Mergers},
+  url      = {https://ideas.repec.org/a/kap/revind/v53y2018i4d10.1007_s11151-018-9663-7.html},
+}
+
+@Article{Borzekowski2009,
+  author   = {Borzekowski, Ron and Thomadsen, Raphael and Taragin, Charles},
+  title    = {Competition and price discrimination in the market for mailing lists},
+  journal  = {QME},
+  year     = {2009},
+  volume   = {7},
+  number   = {2},
+  pages    = {147--179},
+  month    = {Jun},
+  issn     = {1573-711X},
+  abstract = {This paper examines whether mailing list sellers, when faced with additional competitors, are more likely to try to segment consumers by offering additional choices at different prices (second-degree price discrimination) and/or offering different prices to readily identifiable groups of consumers (third-degree price discrimination). We utilize a dataset that includes information about all consumer response lists derived from mail order buyers (i.e. lists derived from catalogs) available for rental in 1997 and 2002. Our results indicate that increased competition leads to an increased propensity to price discriminate along each of the dimensions we investigate. These results hold for both second-degree and third-degree price discrimination. Further, list owners offer menus with more choices in more competitive markets. These results, taken together with results from other empirical studies, suggest that the connection between competition and increased price discrimination is a result that applies broadly.},
+  day      = {01},
+  doi      = {10.1007/s11129-009-9050-7},
+  url      = {https://doi.org/10.1007/s11129-009-9050-7},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
