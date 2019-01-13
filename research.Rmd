@@ -1,0 +1,20 @@
+---
+title: "Research"
+output: html_document
+bibliography: ./CharlesTaraginCV/working.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Working Papers
+```{r working}
+vitae::bibliography_entries("./CharlesTaraginCV/working.bib", "Working Papers")
+```
+## Publications
+```{r publications}
+vitae::bibliography_entries("./CharlesTaraginCV/published.bib", "Publications")
+```
+

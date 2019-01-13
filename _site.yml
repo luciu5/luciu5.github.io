@@ -7,4 +7,6 @@ navbar:
     - text: "Research"
       href: research.html
     - text: "Software"
-      href: research.html
+      href: software.html
+    - text: "CV"
+      href: ./CharlesTaraginCV/CharlesTaraginCV.pdf

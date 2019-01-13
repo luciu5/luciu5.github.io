@@ -1,0 +1,22 @@
+---
+title: "R Packages"
+output: bookdown::html_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(purrr)
+library(knitr)
+```
+
+```{r rpkgs}
+urls <-c("https://CRAN.R-project.org/package=antitrust","https://CRAN.R-project.org/package=trade") 
+
+mypkgs <- pkgsearch::ps("Taragin",size = 100) %>%
+  filter(purrr::map_lgl(package_data, ~ grepl("Charles Taragin", .x$Author, fixed = TRUE))) %>%
+  arrange(desc(downloads_last_month))  %>% select(package,title,description) %>% mutate(package=paste0("[",package,"]","(",urls,")"), `public instance`=c("https://daag.shinyapps.io/antitrust_shiny/","https://daag.shinyapps.io/trade_shiny/"))
+
+kable(mypkgs)
+
+```
