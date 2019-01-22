@@ -1,7 +1,5 @@
 ---
-title: "Charles Taragin"
+title: "About Me"
 ---
 
-Welcome!!
-
-
+Charles Taragin is an Economist at the Antitrust Division, U.S Department of Justice. He has worked at the Division since earning an economics Ph.D. from the University of Michigan, Ann Arbor, in 2007.  Charles is interested in using economic models to predict the effects of firm conduct and government policies including horizontal and vertical mergers as well as tariffs.  His pre-doctoral studies were at the University of Chicago.

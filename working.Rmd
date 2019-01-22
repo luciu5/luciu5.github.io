@@ -1,0 +1,13 @@
+---
+title: ""
+output: html_document
+bibliography: ./CharlesTaraginCV/working.bib
+nocite: '@*'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
