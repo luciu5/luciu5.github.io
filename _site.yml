@@ -15,9 +15,9 @@ navbar:
       href: ./CharlesTaraginCV/CharlesTaraginCV.pdf
   right: 
     - icon: fa-envelope fa-lg
-      mailto: charles.taragin@usdoj.gov
+      href: mailto://charles.taragin@usdoj.gov
     - icon: fa-linkedin fa-lg
-      href: www.linkedin.com/in/charles-taragin-b950a668
+      href: https://www.linkedin.com/in/charles-taragin-b950a668
 output:
   html_document:
     theme: paper
