@@ -6,6 +6,8 @@
   note   = {Submitted to RAND},
   month  = oct,
   year   = {2018},
+  file   = {:/home/ctaragin/Projects/luciu5.bitbucket.io/papers/Sheu_Taragin_BargainingSims.pdf:PDF},
+  url    = {file://papers/Sheu_Taragin_BargainingSims.pdf},
 }
 
 @Unpublished{Taragin2018,
@@ -13,6 +15,7 @@
   title  = {Assessing concentration measures as a proxy for competitive effects in horizontal mergers},
   month  = dec,
   year   = {2018},
+  file   = {:/home/ctaragin/Projects/luciu5.bitbucket.io/papers/hhiperform.pdf:PDF},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
