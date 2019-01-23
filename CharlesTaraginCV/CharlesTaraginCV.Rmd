@@ -3,7 +3,7 @@ name: Charles Taragin
 position: "Economist"
 address: "450 Fifth Street, NW #9438\\ Washington, DC 20530"
 phone: 734-276-6812
-www: mariecurie.com
+www: "luciu5.bitbucket.io"
 email: "charles.taragin@usdoj.gov"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
