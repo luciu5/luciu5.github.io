@@ -1,4 +1,4 @@
-name: "My website"
+name: "Charles Taragin"
 output_dir: "." 
 navbar: 
   title: ""
@@ -13,3 +13,11 @@ navbar:
       href: software.html
     - text: "CV"
       href: ./CharlesTaraginCV/CharlesTaraginCV.pdf
+  right: 
+    - icon: fa-envelope fa-lg
+      mailto: charles.taragin@usdoj.gov
+    - icon: fa-linkedin fa-lg
+      href: www.linkedin.com/in/charles-taragin-b950a668
+output:
+  html_document:
+    theme: paper
