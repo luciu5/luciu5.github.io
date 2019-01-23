@@ -1,4 +1,5 @@
 name: "My website"
+output_dir: "." 
 navbar: 
   title: ""
   left:
