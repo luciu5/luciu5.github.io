@@ -21,10 +21,10 @@ education <- data.frame(degree=c("PhD","Masters","Masters","Bachelors"),
 
 experience <- data.frame(
   what="economist",
-  when="2007-present",                       
-  with="Antitrust Division, U.S. Department of Justice",
-  where="Washington DC",
-  why=c(
+  when=c("June 2019 - present ","September 2007 - May 2019") ,                      
+  with=c("Bureau of Economics, Federal Trade Commission","Antitrust Division, U.S. Department of Justice"),
+  where=rep("Washington DC",2),
+  why=c("",
   "Work closely with attorneys to model and quantify the effect of  mergers and other potentially anti-competitive behavior.",
   "Analyze the effects of various tariffs proposed by the Trump administration.",
   "Antitrust casework  focuses on collusion and monopolization in financial markets, as well as merger analysis  in the health insurance, advertising, airlines, and electricity industries.",
