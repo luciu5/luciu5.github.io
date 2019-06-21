@@ -1,10 +1,10 @@
 ---
 name: Charles Taragin 
 position: "Economist"
-address: "450 Fifth Street, NW #9438\\ Washington, DC 20530"
+address: "600 Pennsylvania Ave NW #202,\\ Washington, DC 20580"
 phone: 734-276-6812
 www: "luciu5.bitbucket.io"
-email: "charles.taragin@usdoj.gov"
+email: "ctaragin@ftc.gov"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
