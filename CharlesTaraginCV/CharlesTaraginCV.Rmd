@@ -1,10 +1,11 @@
 ---
 name: Charles Taragin 
 position: "Economist"
-address: "450 Fifth Street, NW #9438\\ Washington, DC 20530"
+address: "600 Pennsylvania Ave NW, #202\\ Washington, DC 20580"
 phone: 734-276-6812
 www: "luciu5.bitbucket.io"
-email: "charles.taragin@usdoj.gov"
+linkedin: "charles-taragin-b950a668"
+email: "ctaragin@ftc.gov"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::awesomecv
 ---
@@ -19,9 +20,9 @@ education <- data.frame(degree=c("PhD","Masters","Masters","Bachelors"),
                                  year=c(2007,2004,2000,1999)
                        )
 
-experience <- data.frame(
+experience_doj <- data.frame(
   what="economist",
-  when="2007-present",                       
+  when="September 2007 - May 2019",                       
   with="Antitrust Division, U.S. Department of Justice",
   where="Washington DC",
   why=c(
@@ -33,8 +34,19 @@ experience <- data.frame(
 "Designed and coded web interfaces for merger and tariff simulation.",
 "Designed and maintained large databases (over 10 TB) for use in investigations and litigation."))
 
-presentations <- data.frame(what = c("Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
-                            when=   c("6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
+experience_ftc <- data.frame(
+  what="economist",
+  when="June 2019 - present",                       
+  with="Federal Trade Commission",
+  where="Washington DC",
+  why=c(""
+ # "Authored various policy and academic papers on antitrust and trade.",
+#  "Authored code and documentation implementing numerous models to calibrate and simulate the effect of vertical mergers. Versions of this code has been used in antitrust investigations."
+    ))
+
+
+presentations <- data.frame(what = c("DC IO Day","International Industrial Organization Conference","Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
+                            when=   c("5/2019","4/2019","6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
 )
 
 service <- data.frame(what=c("US DoJ/KFTC Knowledge Exchange Program","Algorithmic Document Review","R Training"),
@@ -69,7 +81,14 @@ detailed_entries(education,
 
 ## Experience
 ```{r experience}
-detailed_entries(experience,
+detailed_entries(experience_ftc,
+                  what = what,
+                 when = when,
+                 with = with,
+                 where = where,
+                 why = why)
+
+detailed_entries(experience_doj,
                   what = what,
                  when = when,
                  with = with,
