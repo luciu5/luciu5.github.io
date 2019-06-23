@@ -55,8 +55,9 @@ service <- data.frame(what=c("US DoJ/KFTC Knowledge Exchange Program","Algorithm
                              "Trained a series of machine learning classifiers to predict if a document is pertinent to an investigation. Once these models have been fully tested, they will greatly reduce the time needed to review the massive amount of documents received by the Antritrust Division.",
                              "Authored and co-taught a series of short courses for Economists  and Research Analysts on R. Covered topics included: data analysis, plotting, regression analysis, mapping, interfacing with databases, and antitrust analysis.")
                       )
-awards <- data.frame(when=c(2017:2014,2010),
-                     what=c("Team Award for work on Anthem/Cigna litigation",
+awards <- data.frame(when=c(2019, 2017:2014,2010),
+                     what=c("EAG Management Award For Positive Externality",
+                            "Team Award for work on Anthem/Cigna litigation",
                             "EAG Management Award For Extraordinary Achievement",
                             "Team Award for work on National Cinemedia/Screenvision litigation",
                             "Team Award for work on American/US Airways litigation",
