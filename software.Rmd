@@ -11,11 +11,11 @@ library(knitr)
 ```
 
 ```{r rpkgs}
-urls <-c("https://CRAN.R-project.org/package=antitrust","https://CRAN.R-project.org/package=trade") 
+urls <-c("https://CRAN.R-project.org/package=antitrust","https://CRAN.R-project.org/package=trade","https://CRAN.R-project.org/package=competitiontoolbox") 
 
 mypkgs <- pkgsearch::ps("Taragin",size = 100) %>%
   filter(purrr::map_lgl(package_data, ~ grepl("Charles Taragin", .x$Author, fixed = TRUE))) %>%
-  arrange(desc(downloads_last_month))  %>% select(package,title,description) %>% mutate(package=paste0("[",package,"]","(",urls,")"), `public instance`=c("https://daag.shinyapps.io/antitrust_shiny/","https://daag.shinyapps.io/trade_shiny/"))
+  arrange(desc(title))  %>% select(package,title,description) %>% mutate(package=paste0("[",package,"]","(",urls,")"), `public instance`=c("https://daag.shinyapps.io/ct_shiny/","https://daag.shinyapps.io/ct_shiny/","")) %>% mutate(description=gsub("\\s+"," ",description))
 
 kable(mypkgs)
 

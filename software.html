@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
 <title>R Packages</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -24,6 +25,15 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -71,9 +81,8 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
+
 
 <style type = "text/css">
 .main-container {
@@ -87,7 +96,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -107,33 +115,33 @@ summary {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 51px;
+  padding-top: 64px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
+  padding-top: 69px;
+  margin-top: -69px;
 }
 .dropdown-submenu {
   position: relative;
@@ -192,8 +200,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -238,6 +244,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -250,20 +257,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -299,13 +303,13 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:charles.taragin@usdoj.gov">
-    <span class="fa fa-envelope fa-lg"></span>
+    <span class="fas fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/charles-taragin-b950a668">
-    <span class="fa fa-linkedin fa-lg"></span>
+    <span class="fas fa-linkedin fa-lg"></span>
      
   </a>
 </li>
@@ -324,6 +328,12 @@ $(document).ready(function () {
 
 
 <table>
+<colgroup>
+<col width="14%" />
+<col width="12%" />
+<col width="66%" />
+<col width="6%" />
+</colgroup>
 <thead>
 <tr class="header">
 <th align="left">package</th>
@@ -334,16 +344,22 @@ $(document).ready(function () {
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left"><a href="https://CRAN.R-project.org/package=antitrust">antitrust</a></td>
-<td align="left">Tools for Antitrust Practitioners</td>
-<td align="left">A collection of tools for antitrust practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of mergers under different competitive regimes.</td>
-<td align="left"><a href="https://daag.shinyapps.io/antitrust_shiny/" class="uri">https://daag.shinyapps.io/antitrust_shiny/</a></td>
+<td align="left"><a href="https://CRAN.R-project.org/package=antitrust">trade</a></td>
+<td align="left">Tools for Trade Practitioners</td>
+<td align="left">A collection of tools for trade practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of tariffs and quotas under different competitive regimes. These tools are derived from Anderson et al. (2001) <a href="doi:10.1016/S0047-2727(00)00085-2" class="uri">doi:10.1016/S0047-2727(00)00085-2</a> and Froeb et al. (2003) <a href="doi:10.1016/S0304-4076(02)00166-5" class="uri">doi:10.1016/S0304-4076(02)00166-5</a>.</td>
+<td align="left"><a href="https://daag.shinyapps.io/ct_shiny/" class="uri">https://daag.shinyapps.io/ct_shiny/</a></td>
 </tr>
 <tr class="even">
-<td align="left"><a href="https://CRAN.R-project.org/package=trade">trade</a></td>
-<td align="left">Tools for Trade Practitioners</td>
-<td align="left">A collection of tools for trade practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of tariffs and quotas under different competitive regimes.</td>
-<td align="left"><a href="https://daag.shinyapps.io/trade_shiny/" class="uri">https://daag.shinyapps.io/trade_shiny/</a></td>
+<td align="left"><a href="https://CRAN.R-project.org/package=trade">antitrust</a></td>
+<td align="left">Tools for Antitrust Practitioners</td>
+<td align="left">A collection of tools for antitrust practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of mergers under different competitive regimes.</td>
+<td align="left"><a href="https://daag.shinyapps.io/ct_shiny/" class="uri">https://daag.shinyapps.io/ct_shiny/</a></td>
+</tr>
+<tr class="odd">
+<td align="left"><a href="https://CRAN.R-project.org/package=competitiontoolbox">competitiontoolbox</a></td>
+<td align="left">A Graphical User Interface for Antitrust and Trade Practitioners</td>
+<td align="left">A graphical user interface for simulating the effects of mergers, tariffs, and quotas under an assortment of different economic models. The interface is powered by the ‘Shiny’ web application framework from ‘RStudio’.</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
@@ -357,7 +373,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -365,6 +381,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
