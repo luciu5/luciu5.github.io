@@ -1,5 +1,5 @@
 ---
-name: Charles Taragin 
+name: "Charles Taragin" 
 position: "Economist"
 address: "600 Pennsylvania Ave NW, #202\\ Washington, DC 20580"
 phone: 734-276-6812
@@ -7,7 +7,7 @@ www: "luciu5.bitbucket.io"
 linkedin: "charles-taragin-b950a668"
 email: "ctaragin@ftc.gov"
 date: "`r format(Sys.time(), '%B %Y')`"
-output: vitae::awesomecv
+output: vitae::hyndman
 ---
 
 ```{r setup, include=FALSE}
@@ -39,10 +39,9 @@ experience_ftc <- data.frame(
   when="June 2019 - present",                       
   with="Federal Trade Commission",
   where="Washington DC",
-  why=c(""
- # "Authored various policy and academic papers on antitrust and trade.",
-#  "Authored code and documentation implementing numerous models to calibrate and simulate the effect of vertical mergers. Versions of this code has been used in antitrust investigations."
-    ))
+  why=c(
+  "Work closely with attorneys and economists to model and quantify the effect of mergers and other potentially anti-competitive behavior.")
+  )
 
 
 presentations <- data.frame(what = c("DC IO Day","International Industrial Organization Conference","Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
@@ -66,11 +65,11 @@ awards <- data.frame(when=c(2019, 2017:2014,2010),
                      )
 
 ```
-##Citizenship
+## Citizenship
 **United States**
 
 
-##Education
+## Education
 ```{r education}
 detailed_entries(education,
                  what = degree,
@@ -106,13 +105,17 @@ detailed_entries(presentations,
                  )
 ```
 
+
+## Publications
 ```{r publications}
-bibliography_entries("published.bib", "Publications")
+bibliography_entries("published.bib") 
 ```
 
 
+
+## Working Papers
 ```{r working}
-bibliography_entries("working.bib", "Working Papers")
+bibliography_entries("working.bib")
 ```
 
 
