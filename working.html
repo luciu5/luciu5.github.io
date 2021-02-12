@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>working.utf8</title>
 
+<script src="site_libs/header-attrs-2.6/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/paper.min.css" rel="stylesheet" />
@@ -24,6 +25,15 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -70,10 +80,31 @@ h6 {
 }
 </style>
 
+<style type="text/css">
+/* for pandoc --citeproc since 2.11 */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
 
-</head>
 
-<body>
+
 
 <style type = "text/css">
 .main-container {
@@ -87,7 +118,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -192,8 +222,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -238,6 +266,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -250,20 +279,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -299,13 +325,13 @@ $(document).ready(function () {
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="mailto:charles.taragin@usdoj.gov">
-    <span class="fa fa-envelope fa-lg"></span>
+    <span class="fas fa-envelope fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="https://www.linkedin.com/in/charles-taragin-b950a668">
-    <span class="fa fa-linkedin fa-lg"></span>
+    <span class="fas fa-linkedin fa-lg"></span>
      
   </a>
 </li>
@@ -322,12 +348,21 @@ $(document).ready(function () {
 </div>
 
 
-<div id="refs" class="references">
-<div id="ref-Sheu2018">
-<p>Sheu, Gloria, and Charles Taragin. 2018. “Simulating Mergers in a Vertical Supply Chain with Bargaining.” doi:<a href="https://doi.org/10.13140/RG.2.2.14095.64160">10.13140/RG.2.2.14095.64160</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-Loudermilk2019" class="csl-entry">
+Loudermilk, Margaret, and Charles Taragin. 2019. <span>“Assessing the Efficacy of the vGUPPI as a Screening Tool for Vertical Mergers.”</span>
 </div>
-<div id="ref-Taragin2018">
-<p>Taragin, Charles, and Margaret Loudermilk. 2018. “Assessing Concentration Measures as a Proxy for Competitive Effects in Horizontal Mergers.” doi:<a href="https://doi.org/10.13140/RG.2.2.30872.85760">10.13140/RG.2.2.30872.85760</a>.</p>
+<div id="ref-Sheu2018" class="csl-entry">
+Sheu, Gloria, and Charles Taragin. 2020. <span>“Simulating Mergers in a Vertical Supply Chain with Bargaining.”</span> <a href="https://doi.org/10.13140/RG.2.2.14095.64160/1">https://doi.org/10.13140/RG.2.2.14095.64160/1</a>.
+</div>
+<div id="ref-Taragin2020" class="csl-entry">
+Taragin, Charles. 2020. <span>“Evaluating CMCR Under Model Uncertainty.”</span> <a href="https://doi.org/10.13140/RG.2.2.22231.50083/1">https://doi.org/10.13140/RG.2.2.22231.50083/1</a>.
+</div>
+<div id="ref-Taragin2019" class="csl-entry">
+Taragin, Charles, and Margaret Loudermilk. 2019a. <span>“Ex-Ante Evaluation of Merger Harm Using the 2nd Score Auction Log Odds Ratio.”</span>
+</div>
+<div id="ref-Taragin2018" class="csl-entry">
+———. 2019b. <span>“Using Measures of Competitive Harm for Optimal Screening of Horizontal Mergers.”</span> <a href="https://doi.org/10.13140/RG.2.2.30872.85760/1">https://doi.org/10.13140/RG.2.2.30872.85760/1</a>.
 </div>
 </div>
 
@@ -340,7 +375,7 @@ $(document).ready(function () {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -348,6 +383,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
