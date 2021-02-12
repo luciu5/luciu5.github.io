@@ -15,7 +15,7 @@ urls <-c("https://CRAN.R-project.org/package=antitrust","https://CRAN.R-project.
 
 mypkgs <- pkgsearch::ps("Taragin",size = 100) %>%
   filter(purrr::map_lgl(package_data, ~ grepl("Charles Taragin", .x$Author, fixed = TRUE))) %>%
-  arrange(desc(title))  %>% select(package,title,description) %>% mutate(package=paste0("[",package,"]","(",urls,")"), `public instance`=c("https://daag.shinyapps.io/ct_shiny/","https://daag.shinyapps.io/ct_shiny/","")) %>% mutate(description=gsub("\\s+"," ",description))
+  arrange(desc(title))  %>% select(package,title,description) %>% mutate(package=paste0("[",package,"]","(",urls,")"), `public instance`=c("","","https://daag.shinyapps.io/ct_shiny/")) %>% mutate(description=gsub("\\s+"," ",description))
 
 kable(mypkgs)
 
