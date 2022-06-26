@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Working Papers"
 output: bookdown::html_document2
 bibliography: ./CharlesTaraginCV/working.bib
 nocite: '@*'
