@@ -2,6 +2,7 @@ name: "Charles Taragin"
 output_dir: "." 
 navbar: 
   title: ""
+  type: inverse
   left:
     - text: "Charles Taragin"
       href: index.html
@@ -19,5 +20,5 @@ navbar:
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/charles-taragin-b950a668
 output:
-  html_document:
+  bookdown::html_document2:
     theme: cosmo

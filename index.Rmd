@@ -2,5 +2,5 @@
 ---
 <img src=" DSC_2994.JPG" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
-# Charles Taragin
+
 I am an Economist at the Federal Trade Commission.  I am interested in using economic models to predict the effects of firm conduct and government policies on market outcomes. I have used economic models to predict the outcomes of numerous horizontal mergers in a diverse set of industries, including: financial services, radio and television advertising, and health insurance. I have also used models to analyze the effects of tariffs. 
