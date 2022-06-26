@@ -1,10 +1,11 @@
 ---
-title: "Working Papers"
+title: ""
 output: bookdown::html_document2
 bibliography: ./CharlesTaraginCV/working.bib
 nocite: '@*'
 ---
 
+##Working Papers
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```

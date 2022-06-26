@@ -1,8 +1,9 @@
 ---
-title: "R Packages"
+title: ""
 output: bookdown::html_document2
 ---
 
+##R Packages
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(dplyr)
