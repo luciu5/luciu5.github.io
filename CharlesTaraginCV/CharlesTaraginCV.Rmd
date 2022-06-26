@@ -69,15 +69,6 @@ awards <- data.frame(when=c(2019, 2017:2014,2010),
 **United States**
 
 
-## Education
-```{r education}
-detailed_entries(education,
-                 what = degree,
-                 when = year,
-                 with = type,
-                 where = inst)
-```
-
 
 ## Experience
 ```{r experience}
@@ -94,6 +85,16 @@ detailed_entries(experience_doj,
                  with = with,
                  where = where,
                  why = why)
+```
+
+
+## Education
+```{r education}
+detailed_entries(education,
+                 what = degree,
+                 when = year,
+                 with = type,
+                 where = inst)
 ```
 
 
