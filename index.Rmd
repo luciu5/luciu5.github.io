@@ -1,4 +1,6 @@
 ---
+title: ""
+output: bookdown::html_document2
 ---
 <img src=" DSC_2994.JPG" style="width:25%; border:5px solid; margin-right: 20px" align="left">
 
