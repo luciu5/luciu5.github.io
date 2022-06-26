@@ -5,7 +5,7 @@ bibliography: ./CharlesTaraginCV/working.bib
 nocite: '@*'
 ---
 
-##Working Papers
+## Working Papers
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```

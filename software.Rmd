@@ -3,7 +3,7 @@ title: ""
 output: bookdown::html_document2
 ---
 
-##R Packages
+## R Packages
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(dplyr)

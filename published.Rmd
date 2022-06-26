@@ -4,7 +4,7 @@ output: bookdown::html_document2
 bibliography: ./CharlesTaraginCV/published.bib
 nocite: '@*'
 ---
-##Published Papers
+## Published Papers
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```

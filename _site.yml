@@ -21,4 +21,5 @@ navbar:
       href: https://www.linkedin.com/in/charles-taragin-b950a668
 output:
   bookdown::html_document2:
+    number_sections: false
     theme: cosmo
