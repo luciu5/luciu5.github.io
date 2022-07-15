@@ -1,0 +1,13 @@
+---
+title: ""
+output: bookdown::html_document2
+bibliography: ./CharlesTaraginCV/progress.bib
+nocite: '@*'
+---
+## Papers In Progress
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+

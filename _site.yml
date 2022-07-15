@@ -10,6 +10,8 @@ navbar:
       href: published.html
     - text: "Working"
       href: working.html
+    - text: "In Progress"
+      href: progress.html
     - text: "Software"
       href: software.html
     - text: "CV"

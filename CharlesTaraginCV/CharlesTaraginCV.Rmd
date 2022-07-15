@@ -119,8 +119,12 @@ bibliography_entries("published.bib")
 bibliography_entries("working.bib")
 ```
 
+## Papers In Progress
+```{r progress}
+bibliography_entries("progress.bib")
+```
 
-## Software
+## R Software Packages
 ```{r rpkgs}
 pkgsearch::ps("Taragin",size = 100) %>%
   filter(purrr::map_lgl(package_data, ~ grepl("Charles Taragin", .x$Author, fixed = TRUE))) %>%
