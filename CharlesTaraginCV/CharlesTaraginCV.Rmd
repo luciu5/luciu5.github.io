@@ -1,11 +1,11 @@
 ---
 name: "Charles Taragin" 
-position: "Economist"
-address: "600 Pennsylvania Ave NW, #202\\ Washington, DC 20580"
+position: "Principal Economist"
+address: "1801 K St NW\\ Washington, DC 20006"
 phone: 734-276-6812
 www: "luciu5.bitbucket.io"
 linkedin: "charles-taragin-b950a668"
-email: "ctaragin@ftc.gov"
+email: "ctaragin@gmail.com"
 date: "`r format(Sys.time(), '%B %Y')`"
 output: vitae::hyndman
 ---
@@ -36,13 +36,21 @@ experience_doj <- data.frame(
 
 experience_ftc <- data.frame(
   what="economist",
-  when="June 2019 - present",                       
+  when="June 2019 - September 2022",                       
   with="Federal Trade Commission",
   where="Washington DC",
   why=c(
   "Work closely with attorneys and economists to model and quantify the effect of mergers and other potentially anti-competitive behavior.")
   )
 
+experience_frb <- data.frame(
+  what="principal economist",
+  when="September 2022 - present",                       
+  with="Federal Reserve Board",
+  where="Washington DC",
+  why=c(
+  "Work closely with attorneys and economists to model and quantify the effect of bank mergers and divestitures.")
+  )
 
 presentations <- data.frame(what = c("DC IO Day","International Industrial Organization Conference","Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
                             when=   c("5/2019","4/2019","6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
@@ -72,6 +80,13 @@ awards <- data.frame(when=c(2019, 2017:2014,2010),
 
 ## Experience
 ```{r experience}
+
+detailed_entries(experience_frb,
+                  what = what,
+                 when = when,
+                 with = with,
+                 where = where,
+                 why = why)
 detailed_entries(experience_ftc,
                   what = what,
                  when = when,
