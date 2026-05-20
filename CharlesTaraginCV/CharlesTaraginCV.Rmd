@@ -1,13 +1,13 @@
 ---
-name: "Charles Taragin" 
+name: "Charles Taragin"
 position: "Principal Economist"
-address: "1801 K St NW\\ Washington, DC 20006"
+address: "1801 K St NW, Washington, DC 20006"
 phone: 734-276-6812
 www: "luciu5.bitbucket.io"
 linkedin: "charles-taragin-b950a668"
 email: "ctaragin@gmail.com"
 date: "`r format(Sys.time(), '%B %Y')`"
-output: vitae::hyndman
+output: vitae::awesomecv
 ---
 
 ```{r setup, include=FALSE}
@@ -49,11 +49,11 @@ experience_frb <- data.frame(
   with="Federal Reserve Board",
   where="Washington DC",
   why=c(
-  "Work closely with attorneys and economists to model and quantify the effect of bank mergers and divestitures.")
+  "Work closely with attorneys and economists to analyze the effect of bank mergers and divestitures.")
   )
 
-presentations <- data.frame(what = c("DC IO Day","International Industrial Organization Conference","Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
-                            when=   c("5/2019","4/2019","6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
+presentations <- data.frame(what = c("Federal Trade Commission","DC IO Day","International Industrial Organization Conference","Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
+                            when=   c("11/2025","5/2019","4/2019","6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
 )
 
 service <- data.frame(what=c("US DoJ/KFTC Knowledge Exchange Program","Algorithmic Document Review","R Training"),
@@ -62,8 +62,9 @@ service <- data.frame(what=c("US DoJ/KFTC Knowledge Exchange Program","Algorithm
                              "Trained a series of machine learning classifiers to predict if a document is pertinent to an investigation. Once these models have been fully tested, they will greatly reduce the time needed to review the massive amount of documents received by the Antritrust Division.",
                              "Authored and co-taught a series of short courses for Economists  and Research Analysts on R. Covered topics included: data analysis, plotting, regression analysis, mapping, interfacing with databases, and antitrust analysis.")
                       )
-awards <- data.frame(when=c(2019, 2017:2014,2010),
-                     what=c("EAG Management Award For Positive Externality",
+awards <- data.frame(when=c(2025, 2019, 2017:2014, 2010),
+                     what=c("Team Special Achievement Award for work on Capital One/Discover Merger",
+                            "EAG Management Award For Positive Externality",
                             "Team Award for work on Anthem/Cigna litigation",
                             "EAG Management Award For Extraordinary Achievement",
                             "Team Award for work on National Cinemedia/Screenvision litigation",
@@ -113,6 +114,21 @@ detailed_entries(education,
 ```
 
 
+## Publications
+```{r publications}
+bibliography_entries("published.bib")
+```
+
+## Under Review
+```{r underreview}
+bibliography_entries("underreview.bib")
+```
+
+## In Progress
+```{r progress}
+bibliography_entries("progress.bib")
+```
+
 ## Presentations
 ```{r presentations}
 detailed_entries(presentations,
@@ -121,34 +137,20 @@ detailed_entries(presentations,
                  )
 ```
 
-
-## Publications
-```{r publications}
-bibliography_entries("published.bib") 
-```
-
-
-
-## Working Papers
-```{r working}
-bibliography_entries("working.bib")
-```
-
-## Papers In Progress
-```{r progress}
-bibliography_entries("progress.bib")
-```
-
 ## R Software Packages
 ```{r rpkgs}
-pkgsearch::ps("Taragin",size = 100) %>%
-  filter(purrr::map_lgl(package_data, ~ grepl("Charles Taragin", .x$Author, fixed = TRUE))) %>%
-  arrange(desc(downloads_last_month)) %>%
-  detailed_entries(
-    what = paste(package,title,sep=": "),
-    when = lubridate::year(date),
-    why = description
-  )
+rpkgs <- data.frame(
+  package = c("antitrust", "trade", "competitiontoolbox"),
+  title = c("Tools for Antitrust Practitioners", "Tools for Trade Policy Analysis", "Graphical User Interface for Antitrust and Trade Packages"),
+  description = c("A collection of tools for antitrust practitioners, including merger simulation models, market definition, and equilibrium pricing. Calibrates demand parameters and simulates mergers under various differentiated products demand systems including logit, nested logit, ces, and aids.",
+                  "A collection of tools for trade policy analysis. Provides trade policy practitioners with a tractable framework for simulating the effects of tariffs, quotas, and other trade policy measures on market outcomes.",
+                  "A graphical user interface for the antitrust and trade R packages. Provides an interactive interface for conducting merger simulations, market definition analysis, and trade policy analysis without requiring R programming knowledge.")
+)
+
+detailed_entries(rpkgs,
+                 what = package,
+                 why = description
+)
 ```
 
 
@@ -170,10 +172,17 @@ detailed_entries(awards,
 
 ## Computer Skills
 ```{r skills}
-detailed_entries(data.frame(class=c(rep("Programming",3),rep("Statistics",3),rep("Database",4),rep("Markup",2) ),
-           type=c("Python","C++","Java","R","Stata","SAS","PostGreSQL","PostGIS","MySQL","Microsoft SQL","Markdown","LaTeX")
-),
+skills_data <- data.frame(
+  class = c("AI & LLM Tools", "Programming", "Statistics", "Database", "Markup"),
+  skills = c("Claude Code, OpenAI Codex",
+             "Python, C++, Java",
+             "R, Stata, SAS",
+             "PostGreSQL, PostGIS, MySQL, Microsoft SQL, DuckDB, SQLite",
+             "Markdown, LaTeX")
+)
+
+detailed_entries(skills_data,
                   what = class,
-                 why = type)
+                 why = skills)
 ```
 
