@@ -147,6 +147,8 @@ detailed_entries(presentations,
                  )
 ```
 
+\pagebreak
+
 ## R Software Packages
 ```{r rpkgs}
 rpkgs <- data.frame(
