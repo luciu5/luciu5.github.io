@@ -3,7 +3,7 @@ name: "Charles Taragin"
 position: "Principal Economist"
 address: "1801 K St NW, Washington, DC 20006"
 phone: 734-276-6812
-www: "luciu5.bitbucket.io"
+www: "luciu5.github.io"
 linkedin: "charles-taragin-b950a668"
 email: "ctaragin@gmail.com"
 date: "`r format(Sys.time(), '%B %Y')`"
@@ -21,36 +21,40 @@ education <- data.frame(degree=c("PhD","Masters","Masters","Bachelors"),
                        )
 
 experience_doj <- data.frame(
-  what="economist",
+  what="Economist",
   when="September 2007 - May 2019",                       
   with="Antitrust Division, U.S. Department of Justice",
   where="Washington DC",
   why=c(
-  "Work closely with attorneys to model and quantify the effect of  mergers and other potentially anti-competitive behavior.",
-  "Analyze the effects of various tariffs proposed by the Trump administration.",
-  "Antitrust casework  focuses on collusion and monopolization in financial markets, as well as merger analysis  in the health insurance, advertising, airlines, and electricity industries.",
-  "Authored code and documentation implementing numerous models to calibrate and simulate the effect of horizontal mergers. Versions of this code has been used in numerous antitrust investigations as well as in litigation.",
- "Authored code and documentation implementing numerous models to calibrate and simulate the effect of tariffs and quotas.",
-"Designed and coded web interfaces for merger and tariff simulation.",
-"Designed and maintained large databases (over 10 TB) for use in investigations and litigation."))
+    "Served as the lead or key economist on major merger investigations and litigations, including Anthem / Cigna (health insurance), American Airlines / US Airways (airlines), National CineMedia / Screenvision (cinema advertising), Twin America ('hop-on, hop-off' tour buses), Standard Parking / Central Parking (parking facilities), and radio station advertising mergers.",
+    "Modeled market-wide pricing and welfare impacts of trade tariffs and import quotas proposed by the administration.",
+    "Authored core code and mathematical frameworks (in R and Stata) for horizontal merger, tariff, and quota simulations used standardly in Antitrust Division investigations.",
+    "Designed and coded interactive web interfaces for merger and tariff simulation tools.",
+    "Designed and maintained massive databases (exceeding 10 TB) to support complex antitrust investigations and federal court litigation."
+  )
+)
 
 experience_ftc <- data.frame(
-  what="economist",
+  what="Economist",
   when="June 2019 - September 2022",                       
   with="Federal Trade Commission",
   where="Washington DC",
   why=c(
-  "Work closely with attorneys and economists to model and quantify the effect of mergers and other potentially anti-competitive behavior.")
+    "Collaborated with attorneys to model and quantify competitive effects in merger investigations, including vertical integration in the NVIDIA / ARM semiconductor merger (FTC challenge).",
+    "Investigated consumer harm from deceptive marketing practices, analyzing hidden lease terms and negative product review suppression."
   )
+)
 
 experience_frb <- data.frame(
-  what="principal economist",
+  what="Principal Economist",
   when="September 2022 - present",                       
   with="Federal Reserve Board",
   where="Washington DC",
   why=c(
-  "Work closely with attorneys and economists to analyze the effect of bank mergers and divestitures.")
+    "Lead the economic analysis of bank mergers and divestitures, including the high-profile Capital One / Discover merger (joint Board and DOJ investigation).",
+    "Architect spatial competition and distance-based algorithms to define retail banking markets and evaluate antitrust risk."
   )
+)
 
 presentations <- data.frame(what = c("Federal Trade Commission","DC IO Day","International Industrial Organization Conference","Federal Trade Commission","International Competition Network","International Industrial Organization Conference","Federal Communication Commission","U.S. Department of Justice"),
                             when=   c("11/2025","5/2019","4/2019","6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
