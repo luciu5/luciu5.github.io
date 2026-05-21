@@ -37,7 +37,7 @@ experience_doj <- data.frame(
   why=c(
     "Served as an economist on major merger investigations and litigations, including Anthem / Cigna (health insurance), American Airlines / US Airways (airlines), National CineMedia / Screenvision (cinema advertising), Twin America ('hop-on, hop-off' tour buses), Standard Parking / Central Parking (parking facilities), and radio station advertising mergers.",
     "Modeled market-wide pricing and welfare impacts of Washer and Steel tariffs and import quotas proposed during the first Trump administration.",
-    "Authored core code and mathematical frameworks (in R and Stata) for horizontal merger, tariff, and quota simulations used standardly in Antitrust Division investigations.",
+    "Authored core code and mathematical frameworks (in R and Stata) for horizontal merger, tariff, and quota simulations used frequently in Antitrust Division investigations.",
     "Designed and coded interactive web interfaces for merger and tariff simulation tools.",
     "Designed and maintained massive databases (exceeding 10 TB) to support complex antitrust investigations and federal court litigation."
   )
