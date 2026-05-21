@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // 1. Decorate Publications & Bibliography (if present)
     decorateBibliography();
 
-    // 2. Add Custom Footer to Page
-    injectFooter();
 });
 
 /**
@@ -350,25 +348,4 @@ function parseRawCitation(entry) {
     };
 }
 
-/**
- * Appends a sleek, premium footer to the bottom of the main-container.
- */
-function injectFooter() {
-    const container = document.querySelector(".main-container");
-    if (!container) return;
 
-    // Check if footer exists first
-    let footer = document.querySelector(".footer-wrap");
-    if (footer) return;
-
-    footer = document.createElement("div");
-    footer.className = "footer-wrap";
-    footer.innerHTML = `
-        <div class="footer-container">
-            <span class="footer-text">&copy; 2026 Charles Taragin. All rights reserved.</span>
-        </div>
-    `;
-
-    // Append to body so it always sits at the very bottom of the document
-    document.body.appendChild(footer);
-}
