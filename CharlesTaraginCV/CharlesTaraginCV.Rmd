@@ -51,8 +51,7 @@ experience_frb <- data.frame(
   with="Federal Reserve Board",
   where="Washington DC",
   why=c(
-    "Lead the economic analysis of bank mergers and divestitures, including the high-profile Capital One / Discover merger (joint Board and DOJ investigation).",
-    "Architect spatial competition and distance-based algorithms to define retail banking markets and evaluate antitrust risk."
+    "Lead the economic analysis of bank mergers and divestitures, including the high-profile Capital One / Discover merger (joint Board and DOJ investigation)."
   )
 )
 
