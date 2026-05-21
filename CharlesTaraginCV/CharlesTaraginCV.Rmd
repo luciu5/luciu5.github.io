@@ -35,8 +35,8 @@ experience_doj <- data.frame(
   with="Antitrust Division, U.S. Department of Justice",
   where="Washington DC",
   why=c(
-    "Served as the lead or key economist on major merger investigations and litigations, including Anthem / Cigna (health insurance), American Airlines / US Airways (airlines), National CineMedia / Screenvision (cinema advertising), Twin America ('hop-on, hop-off' tour buses), Standard Parking / Central Parking (parking facilities), and radio station advertising mergers.",
-    "Modeled market-wide pricing and welfare impacts of trade tariffs and import quotas proposed by the administration.",
+    "Served as an economist on major merger investigations and litigations, including Anthem / Cigna (health insurance), American Airlines / US Airways (airlines), National CineMedia / Screenvision (cinema advertising), Twin America ('hop-on, hop-off' tour buses), Standard Parking / Central Parking (parking facilities), and radio station advertising mergers.",
+    "Modeled market-wide pricing and welfare impacts of Washer and Steel tariffs and import quotas proposed during the first Trump administration.",
     "Authored core code and mathematical frameworks (in R and Stata) for horizontal merger, tariff, and quota simulations used standardly in Antitrust Division investigations.",
     "Designed and coded interactive web interfaces for merger and tariff simulation tools.",
     "Designed and maintained massive databases (exceeding 10 TB) to support complex antitrust investigations and federal court litigation."
@@ -49,8 +49,7 @@ experience_ftc <- data.frame(
   with="Federal Trade Commission",
   where="Washington DC",
   why=c(
-    "Collaborated with attorneys to model and quantify competitive effects in merger investigations, including vertical integration in the NVIDIA / ARM semiconductor merger (FTC challenge).",
-    "Investigated consumer harm from deceptive marketing practices, analyzing hidden lease terms and negative product review suppression."
+    "Collaborated with attorneys to model and quantify competitive effects in merger investigations, including vertical integration in the NVIDIA / ARM semiconductor merger (FTC challenge)."
   )
 )
 
@@ -68,9 +67,10 @@ presentations <- data.frame(what = c("Federal Trade Commission","DC IO Day","Int
                             when=   c("11/2025","5/2019","4/2019","6/2018, 7/2018","2018","2018","8/2018, 2013","2012, 2017")
 )
 
-service <- data.frame(what=c("US DoJ/KFTC Knowledge Exchange Program","Algorithmic Document Review","R Training"),
-                      when=c(2018,2017,"2012 - present"),
-                      why= c("Organized, co-authored and co-taught a 3 day training program for new economists at the Korean Free Trade Commission (KFTC). The purpose of this program was to train KFTC economists in how to analyze horizontal mergers.",
+service <- data.frame(what=c("Acting Advisor to Commissioner Noah Phillips", "US DoJ/KFTC Knowledge Exchange Program","Algorithmic Document Review","R Training"),
+                      when=c("2021", "2018","2017","2012 - present"),
+                      why= c("Served as Acting Advisor to Commissioner Noah Phillips for three months.",
+                             "Organized, co-authored and co-taught a 3 day training program for new economists at the Korean Free Trade Commission (KFTC). The purpose of this program was to train KFTC economists in how to analyze horizontal mergers.",
                              "Trained a series of machine learning classifiers to predict if a document is pertinent to an investigation. Once these models have been fully tested, they will greatly reduce the time needed to review the massive amount of documents received by the Antritrust Division.",
                              "Authored and co-taught a series of short courses for Economists  and Research Analysts on R. Covered topics included: data analysis, plotting, regression analysis, mapping, interfacing with databases, and antitrust analysis.")
                       )
@@ -87,7 +87,7 @@ awards <- data.frame(when=c(2025, 2019, 2017:2014, 2010),
 
 ```
 ## Executive Summary
-Antitrust and banking economist with over 15 years of experience leading high-profile regulatory merger investigations at the Federal Reserve Board, Federal Trade Commission, and Department of Justice. Specialist in horizontal and vertical merger simulation, spatial market definition, and industrial organization. Developer of the standard open-source R packages for antitrust simulation and policy analysis. U.S. Citizen.
+Antitrust and banking economist with over 15 years of experience leading high-profile merger investigations at the Federal Reserve Board, Federal Trade Commission, and Department of Justice. Specialist in horizontal and vertical merger simulation, spatial market definition, and industrial organization. Developer of the standard open-source R packages for antitrust simulation and policy analysis. U.S. Citizen.
 
 ## Experience
 ```{r experience}
@@ -114,16 +114,7 @@ detailed_entries(experience_doj,
 ```
 
 
-## Education
-```{r education}
-detailed_entries(education,
-                 what = degree,
-                 when = year,
-                 with = type,
-                 where = inst)
-```
-
-
+\pagebreak
 ## Publications
 ```{r publications}
 bibliography_entries("published.bib")
@@ -137,6 +128,15 @@ bibliography_entries("underreview.bib")
 ## In Progress
 ```{r progress}
 bibliography_entries("progress.bib")
+```
+
+## Education
+```{r education}
+detailed_entries(education,
+                 what = degree,
+                 when = year,
+                 with = type,
+                 where = inst)
 ```
 
 ## Presentations
