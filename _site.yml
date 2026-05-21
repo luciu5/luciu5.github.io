@@ -18,10 +18,13 @@ navbar:
       href: ./CharlesTaraginCV/CharlesTaraginCV.pdf
   right: 
     - icon: fa-envelope fa-lg
-      href: mailto:charles.taragin@ftc.gov
+      href: mailto:ctaragin@gmail.com
     - icon: fa-linkedin fa-lg
       href: https://www.linkedin.com/in/charles-taragin-b950a668
 output:
   bookdown::html_document2:
     number_sections: false
     theme: cosmo
+    css: styles.css
+    includes:
+      after_body: script_loader.html

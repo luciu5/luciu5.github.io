@@ -31,8 +31,8 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -59,6 +59,7 @@ if (window.hljs) {
 
 
 
+<link rel="stylesheet" href="styles.css" type="text/css" />
 
 
 
@@ -179,8 +180,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -188,16 +189,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -271,7 +265,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:charles.taragin@ftc.gov">
+  <a href="mailto:ctaragin@gmail.com">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -297,10 +291,11 @@ $(document).ready(function () {
 
 <div id="charles-taragin" class="section level2">
 <h2>Charles Taragin</h2>
-<p><img src=" DSC_2994.JPG" style="width:25%; border:5px solid; margin-right: 20px" align="left"></p>
+<p><img src="sherman_act_cartoon.png" style="width:35%; border:1px solid #ccc; margin-right: 20px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" align="left" id="sherman-cartoon"></p>
 <p>I am a Principal Economist at the Board of Governors of the Federal Reserve System. I am interested in using economic models to predict the effects of firm conduct and government policies on market outcomes. I have used economic models to predict the outcomes of numerous horizontal mergers in a diverse set of industries, including: financial services, radio and television advertising, and health insurance. I have also used models to analyze the effects of tariffs.</p>
 </div>
 
+<script src="script.js"></script>
 
 
 

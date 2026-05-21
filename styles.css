@@ -1,0 +1,628 @@
+/* ==========================================================================
+   Charles Taragin Portfolio Styles - Premium Custom Theme for R Markdown
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+/* Color Variables & Themes */
+:root {
+    --bg-primary: #f8fafc;        /* slate-50 */
+    --bg-secondary: #f1f5f9;      /* slate-100 */
+    --text-primary: #334155;      /* slate-700 */
+    --text-title: #0f172a;        /* slate-900 */
+    --text-muted: #64748b;        /* slate-500 */
+    
+    --accent-color: #0f766e;      /* teal-700 */
+    --accent-gradient: linear-gradient(135deg, #0f766e 0%, #4f46e5 100%);
+    --accent-glow: rgba(15, 118, 110, 0.15);
+    
+    --card-bg: #ffffff;
+    --card-border: #e2e8f0;       /* slate-200 */
+    --shadow-color: rgba(15, 23, 42, 0.05);
+    --shadow-hover: rgba(15, 23, 42, 0.1);
+    
+    --navbar-bg: rgba(255, 255, 255, 0.8);
+    --navbar-text: #334155;
+    --navbar-active: #0f766e;
+    
+    --border-radius-sm: 6px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 20px;
+}
+
+body.dark-theme {
+    --bg-primary: #0b0f19;        /* Deep midnight blue-gray */
+    --bg-secondary: #111827;      /* gray-900 */
+    --text-primary: #cbd5e1;      /* slate-300 */
+    --text-title: #f8fafc;        /* slate-50 */
+    --text-muted: #94a3b8;        /* slate-400 */
+    
+    --accent-color: #2dd4bf;      /* teal-400 */
+    --accent-gradient: linear-gradient(135deg, #2dd4bf 0%, #818cf8 100%);
+    --accent-glow: rgba(45, 212, 191, 0.2);
+    
+    --card-bg: #1e293b;           /* slate-800 */
+    --card-border: #334155;       /* slate-700 */
+    --shadow-color: rgba(0, 0, 0, 0.25);
+    --shadow-hover: rgba(0, 0, 0, 0.4);
+    
+    --navbar-bg: rgba(11, 15, 25, 0.85);
+    --navbar-text: #cbd5e1;
+    --navbar-active: #2dd4bf;
+}
+
+/* Base Overrides */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    padding-bottom: 60px !important; /* Space for footer */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--text-title);
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+a {
+    color: var(--accent-color);
+    transition: color 0.2s ease, border-color 0.2s ease;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: var(--text-title);
+}
+
+/* Layout Container */
+.main-container {
+    max-width: 1040px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin-top: 40px !important;
+}
+
+/* Navigation Bar Styling */
+.navbar-fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.navbar {
+    background-color: var(--navbar-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none !important;
+    border-bottom: 1px solid var(--card-border) !important;
+    box-shadow: 0 4px 20px var(--shadow-color);
+    padding: 10px 0;
+    transition: background-color 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: var(--navbar-text) !important;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 1.05rem;
+    padding: 12px 16px;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.2s ease;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    color: var(--accent-color) !important;
+    background-color: rgba(15, 118, 110, 0.05) !important;
+}
+
+body.dark-theme .navbar-inverse .navbar-nav > li > a:hover {
+    background-color: rgba(45, 212, 191, 0.08) !important;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+    color: var(--navbar-active) !important;
+    background-color: transparent !important;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+    color: var(--text-title) !important;
+    letter-spacing: -0.5px;
+    transition: color 0.3s ease;
+}
+
+.navbar-header .navbar-toggle {
+    border-color: var(--card-border) !important;
+}
+
+.navbar-header .navbar-toggle:hover {
+    background-color: var(--bg-secondary) !important;
+}
+
+.navbar-header .navbar-toggle .icon-bar {
+    background-color: var(--text-primary) !important;
+}
+
+/* Home Splash Page (index.html) */
+#charles-taragin {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+#sherman-cartoon {
+    width: 35% !important;
+    max-width: 400px;
+    float: left;
+    margin: 0 2rem 1.5rem 0 !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: var(--border-radius-md) !important;
+    box-shadow: 0 10px 25px var(--shadow-color) !important;
+    transition: all 0.3s ease;
+}
+
+#sherman-cartoon:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px var(--shadow-hover) !important;
+}
+
+/* Dynamic styling for homepage text paragraph */
+#charles-taragin p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Timeline component for Resume/CV integration */
+.cv-timeline {
+    position: relative;
+    padding-left: 30px;
+    margin-top: 2rem;
+}
+
+.cv-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 9px;
+    width: 2px;
+    background: var(--card-border);
+}
+
+/* Bibliography styling (published.html, working.html, progress.html) */
+#refs {
+    margin-top: 2.5rem;
+}
+
+.csl-entry {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 22px 26px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
+    line-height: 1.6;
+    position: relative;
+    overflow: hidden;
+}
+
+.csl-entry::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--accent-gradient);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.csl-entry:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px var(--shadow-hover);
+    border-color: var(--accent-color);
+}
+
+.csl-entry:hover::before {
+    opacity: 1;
+}
+
+/* Styles for specific segments of citation injected by JS */
+.paper-title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--text-title);
+    margin-bottom: 8px;
+    display: block;
+    line-height: 1.4;
+}
+
+.paper-authors {
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.paper-authors strong {
+    color: var(--text-title);
+}
+
+.paper-journal {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.paper-year {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Custom interactive search/filter component above refs list */
+.research-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 2.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-md);
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+@media(min-width: 768px) {
+    .research-controls {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.search-wrapper {
+    position: relative;
+    flex-grow: 1;
+}
+
+.search-wrapper i {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-muted);
+}
+
+.search-input {
+    width: 100%;
+    padding: 10px 16px 10px 42px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--card-border);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.95rem;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+.search-input:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px var(--accent-glow);
+}
+
+/* Abstract toggler layout */
+.abstract-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    border: 1px solid var(--card-border);
+    padding: 6px 12px;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+}
+
+.abstract-toggle-btn:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+    border-color: var(--accent-color);
+}
+
+.paper-abstract {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s cubic-bezier(0, 1, 0, 1);
+    background: var(--bg-secondary);
+    border-radius: var(--border-radius-sm);
+    margin-top: 10px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.paper-abstract.show {
+    max-height: 1000px;
+    transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
+    padding: 16px;
+    border: 1px solid var(--card-border);
+}
+
+/* Links inside references cards */
+.paper-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 14px;
+}
+
+.paper-link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--accent-color);
+    background: transparent;
+    padding: 4px 8px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--accent-color);
+    transition: all 0.2s ease;
+}
+
+.paper-link-btn:hover {
+    background: var(--accent-color);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Software Table (software.html) restyling into modern dashboard table */
+.section table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 2rem !important;
+    background-color: var(--card-bg) !important;
+    border: 1px solid var(--card-border) !important;
+    border-radius: var(--border-radius-md) !important;
+    box-shadow: 0 4px 6px var(--shadow-color) !important;
+    overflow: hidden !important;
+}
+
+.section th {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-title) !important;
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    padding: 16px 20px !important;
+    border-bottom: 2px solid var(--card-border) !important;
+}
+
+.section td {
+    padding: 18px 20px !important;
+    border-bottom: 1px solid var(--card-border) !important;
+    color: var(--text-primary) !important;
+    font-size: 0.95rem !important;
+    line-height: 1.6 !important;
+    vertical-align: middle !important;
+}
+
+.section tr:last-child td {
+    border-bottom: none !important;
+}
+
+.section tr:hover td {
+    background-color: rgba(15, 118, 110, 0.02) !important;
+}
+
+body.dark-theme .section tr:hover td {
+    background-color: rgba(45, 212, 191, 0.02) !important;
+}
+
+/* Package name styling inside table */
+.section td a[href*="package="] {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--text-title);
+    background: var(--bg-secondary);
+    padding: 6px 14px;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--card-border);
+    display: inline-block;
+    transition: all 0.25s ease;
+}
+
+.section td a[href*="package="]:hover {
+    color: #ffffff;
+    background: var(--accent-gradient);
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px var(--accent-glow);
+}
+
+/* URL text styling */
+.section td a[href*="shinyapps.io"] {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    padding: 8px 14px;
+    border-radius: var(--border-radius-sm);
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 6px var(--accent-glow);
+}
+
+.section td a[href*="shinyapps.io"]:hover {
+    background-color: var(--text-title);
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+/* Dark/Light Mode Theme Toggle Switch in Nav */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media(min-width: 768px) {
+    .theme-switch-wrapper {
+        padding: 0;
+        margin-top: 4px;
+    }
+}
+
+.theme-toggle-btn {
+    background: transparent;
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+    background: var(--bg-secondary);
+    color: var(--accent-color);
+    transform: scale(1.05);
+}
+
+.theme-toggle-btn i {
+    font-size: 1.15rem;
+    transition: transform 0.4s ease;
+}
+
+body.dark-theme .theme-toggle-btn .fa-moon {
+    display: none;
+}
+
+body:not(.dark-theme) .theme-toggle-btn .fa-sun {
+    display: none;
+}
+
+/* Elegant footer creation */
+.footer-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: var(--bg-secondary);
+    border-top: 1px solid var(--card-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1040px;
+    padding: 0 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media(min-width: 768px) {
+    .footer-container {
+        flex-direction: row;
+    }
+}
+
+.footer-text {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.footer-socials {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+@media(min-width: 768px) {
+    .footer-socials {
+        margin-top: 0;
+    }
+}
+
+.footer-socials a {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.footer-socials a:hover {
+    color: var(--accent-color);
+}
+
+/* Interactive Accordions / Info Boxes for details */
+.info-box {
+    background-color: var(--card-bg);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+    padding: 16px 20px;
+    margin: 1.5rem 0;
+    box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.info-box p {
+    margin: 0;
+}
