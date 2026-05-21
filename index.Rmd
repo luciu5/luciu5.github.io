@@ -3,6 +3,9 @@ title: ""
 output: bookdown::html_document2
 ---
 ## Charles Taragin
-<img src="sherman_act_cartoon.png" style="width:35%; border:1px solid #ccc; margin-right: 20px; border-radius: 4px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);" align="left" id="sherman-cartoon">
+<figure id="historical-cartoon-container">
+  <img src="the_bosses_of_the_senate.jpg" id="historical-cartoon" alt="The Bosses of the Senate">
+  <figcaption class="cartoon-caption"><em>The Bosses of the Senate</em> by Joseph Keppler (1889). Public Domain.</figcaption>
+</figure>
 
 I am a Principal Economist at the Board of Governors of the Federal Reserve System. I specialize in applying structural and quantitative economic models to analyze firm conduct, evaluate mergers, and predict the outcomes of government policies on market competition. Over nearly two decades of public service across the Federal Reserve Board, the Federal Trade Commission, and the Department of Justice Antitrust Division, I have led economic investigations and supported high-profile litigations across a wide array of sectors, including retail banking (such as the Capital One / Discover merger), semiconductors (NVIDIA / ARM), health insurance (Anthem / Cigna), cinema and radio advertising, airlines (American Airlines / US Airways), and parking services. 

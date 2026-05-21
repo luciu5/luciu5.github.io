@@ -160,20 +160,32 @@ a:hover {
     gap: 2rem;
 }
 
-#sherman-cartoon {
-    width: 35% !important;
-    max-width: 400px;
-    float: left;
-    margin: 0 2rem 1.5rem 0 !important;
+#historical-cartoon-container {
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+
+#historical-cartoon {
+    width: 85% !important;
+    max-width: 800px;
+    display: block;
+    margin: 0 auto;
     border: 1px solid var(--card-border) !important;
     border-radius: var(--border-radius-md) !important;
     box-shadow: 0 10px 25px var(--shadow-color) !important;
     transition: all 0.3s ease;
 }
 
-#sherman-cartoon:hover {
+#historical-cartoon:hover {
     transform: scale(1.02);
     box-shadow: 0 15px 30px var(--shadow-hover) !important;
+}
+
+.cartoon-caption {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 12px;
+    font-style: italic;
 }
 
 /* Dynamic styling for homepage text paragraph */
