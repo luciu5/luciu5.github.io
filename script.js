@@ -366,13 +366,9 @@ function injectFooter() {
     footer.innerHTML = `
         <div class="footer-container">
             <span class="footer-text">&copy; 2026 Charles Taragin. All rights reserved.</span>
-            <div class="footer-socials">
-                <a href="mailto:ctaragin@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/charles-taragin-b950a668" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
         </div>
     `;
 
-    // Append to container but outside the primary row/sections
-    container.appendChild(footer);
+    // Append to body so it always sits at the very bottom of the document
+    document.body.appendChild(footer);
 }

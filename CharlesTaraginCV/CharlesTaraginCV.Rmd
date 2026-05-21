@@ -68,7 +68,7 @@ presentations <- data.frame(what = c("Federal Trade Commission","DC IO Day","Int
 )
 
 service <- data.frame(what=c("Acting Advisor to Commissioner Noah Phillips", "US DoJ/KFTC Knowledge Exchange Program","Algorithmic Document Review","R Training"),
-                      when=c("2021", "2018","2017","2012 - present"),
+                      when=c("2020", "2018","2017","2012 - present"),
                       why= c("Served as Acting Advisor to Commissioner Noah Phillips for three months.",
                              "Organized, co-authored and co-taught a 3 day training program for new economists at the Korean Free Trade Commission (KFTC). The purpose of this program was to train KFTC economists in how to analyze horizontal mergers.",
                              "Trained a series of machine learning classifiers to predict if a document is pertinent to an investigation. Once these models have been fully tested, they will greatly reduce the time needed to review the massive amount of documents received by the Antritrust Division.",
