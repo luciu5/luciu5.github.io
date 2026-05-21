@@ -85,7 +85,7 @@ output: bookdown::html_document2
   <div class="paper-venue">The RAND Journal of Economics, 52(3): 596-632 (2021)</div>
   <div class="paper-links">
   <a href="https://doi.org/10.1111/1756-2171.12385" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-  <a href="https://github.com/luciu5/bargaining_logit" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://github.com/luciu5/antitrust" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
@@ -127,7 +127,7 @@ output: bookdown::html_document2
   <div class="paper-venue">Finance and Economics Discussion Series 2025-080, Board of Governors of the Federal Reserve System (2025)</div>
   <div class="paper-links">
   <a href="https://doi.org/10.17016/FEDS.2025.080" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-  <a href="https://github.com/luciu5/mergers_debt" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://github.com/luciu5/MergerDebt" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
