@@ -6,61 +6,12 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-    // 1. Initialize Theme Mode (Dark/Light)
-    initTheme();
-
-    // 2. Decorate Publications & Bibliography (if present)
+    // 1. Decorate Publications & Bibliography (if present)
     decorateBibliography();
 
-    // 3. Add Custom Footer to Page
+    // 2. Add Custom Footer to Page
     injectFooter();
 });
-
-/**
- * Injects a theme toggle switch in the navbar and manages the theme.
- */
-function initTheme() {
-    const navbar = document.querySelector(".navbar-collapse");
-    if (!navbar) return;
-
-    // Create the toggle container and button
-    const toggleWrapper = document.createElement("div");
-    toggleWrapper.className = "nav navbar-nav navbar-right theme-switch-wrapper";
-
-    const toggleBtn = document.createElement("button");
-    toggleBtn.className = "theme-toggle-btn";
-    toggleBtn.id = "theme-toggle";
-    toggleBtn.setAttribute("aria-label", "Toggle dark/light theme");
-    toggleBtn.innerHTML = `
-        <i class="fa-solid fa-moon"></i>
-        <i class="fa-solid fa-sun"></i>
-    `;
-
-    toggleWrapper.appendChild(toggleBtn);
-    
-    // Find the right place to inject: after the existing list items in right navbar
-    const rightNav = navbar.querySelector(".navbar-right");
-    if (rightNav) {
-        rightNav.appendChild(toggleWrapper);
-    } else {
-        navbar.appendChild(toggleWrapper);
-    }
-
-    // Check saved theme or system preference
-    const savedTheme = localStorage.getItem("theme");
-    const systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    
-    if (savedTheme === "dark" || (!savedTheme && systemDark)) {
-        document.body.classList.add("dark-theme");
-    }
-
-    // Toggle event listener
-    toggleBtn.addEventListener("click", function () {
-        document.body.classList.toggle("dark-theme");
-        const isDark = document.body.classList.contains("dark-theme");
-        localStorage.setItem("theme", isDark ? "dark" : "light");
-    });
-}
 
 /**
  * Bibliography dictionary mapping Pandoc Citation Keys to details and abstracts.
