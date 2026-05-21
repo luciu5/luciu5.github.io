@@ -162,12 +162,12 @@ a:hover {
 
 #historical-cartoon-container {
     text-align: center;
-    margin: 2rem 0 3rem 0;
+    margin: 1rem 0 1.5rem 0;
 }
 
 #historical-cartoon {
-    width: 85% !important;
-    max-width: 800px;
+    width: 55% !important;
+    max-width: 600px;
     display: block;
     margin: 0 auto;
     border: 1px solid var(--card-border) !important;
