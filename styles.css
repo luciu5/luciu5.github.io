@@ -166,8 +166,8 @@ a:hover {
 }
 
 #historical-cartoon {
-    width: 55% !important;
-    max-width: 600px;
+    width: 66% !important;
+    max-width: 720px;
     display: block;
     margin: 0 auto;
     border: 1px solid var(--card-border) !important;
