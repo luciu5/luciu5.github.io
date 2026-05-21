@@ -114,6 +114,15 @@ detailed_entries(experience_doj,
 ```
 
 
+## Education
+```{r education}
+detailed_entries(education,
+                 what = degree,
+                 when = year,
+                 with = type,
+                 where = inst)
+```
+
 \pagebreak
 ## Publications
 ```{r publications}
@@ -128,15 +137,6 @@ bibliography_entries("underreview.bib")
 ## In Progress
 ```{r progress}
 bibliography_entries("progress.bib")
-```
-
-## Education
-```{r education}
-detailed_entries(education,
-                 what = degree,
-                 when = year,
-                 with = type,
-                 where = inst)
 ```
 
 ## Presentations
