@@ -46,8 +46,8 @@ output: bookdown::html_document2
   <div class="paper-authors">Charles Taragin and Marco Taylhardat</div>
   <div class="paper-venue">Finance Research Letters, 86: 108972 (2025)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.1016/j.frl.2025.108972" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-    <a href="https://github.com/luciu5/sod" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://doi.org/10.1016/j.frl.2025.108972" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://github.com/luciu5/sod" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
@@ -56,7 +56,7 @@ output: bookdown::html_document2
   <div class="paper-authors">David Benson, Vitaly Bord, Aaron Garner, and Charles Taragin</div>
   <div class="paper-venue">FEDS Notes, Board of Governors of the Federal Reserve System (September 2023)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.17016/2380-7172.3345" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://doi.org/10.17016/2380-7172.3345" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
   </div>
 </div>
 
@@ -65,8 +65,8 @@ output: bookdown::html_document2
   <div class="paper-authors">Matthew T. Panhans and Charles Taragin</div>
   <div class="paper-venue">International Journal of Industrial Organization, 89: 102986 (2023)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.1016/j.ijindorg.2023.102986" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-    <a href="https://github.com/luciu5/antitrust" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://doi.org/10.1016/j.ijindorg.2023.102986" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://github.com/luciu5/antitrust" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
@@ -75,7 +75,7 @@ output: bookdown::html_document2
   <div class="paper-authors">Michael Vita, Keith Brand, Miriam Larson-Koester, Nathan Petek, Charles Taragin, William Violette, and Daniel H. Wood</div>
   <div class="paper-venue">Review of Industrial Organization, 61(4): 405-438 (2022)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.1007/s11151-022-09883-w" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://doi.org/10.1007/s11151-022-09883-w" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
   </div>
 </div>
 
@@ -84,8 +84,8 @@ output: bookdown::html_document2
   <div class="paper-authors">Gloria Sheu and Charles Taragin</div>
   <div class="paper-venue">The RAND Journal of Economics, 52(3): 596-632 (2021)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.1111/1756-2171.12385" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-    <a href="https://github.com/luciu5/bargaining_logit" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://doi.org/10.1111/1756-2171.12385" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://github.com/luciu5/bargaining_logit" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
@@ -94,7 +94,7 @@ output: bookdown::html_document2
   <div class="paper-authors">Luke M. Froeb, Russell W. Pittman, Charles S. Taragin, Steven Tschantz, and Gregory J. Werden</div>
   <div class="paper-venue">Review of Industrial Organization, 53(4): 637-651 (December 2018)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.1007/s11151-018-9662-8" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://doi.org/10.1007/s11151-018-9662-8" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
   </div>
 </div>
 
@@ -103,7 +103,7 @@ output: bookdown::html_document2
   <div class="paper-authors">Luke M. Froeb, Vladimir Mares, Steven Tschantz, and Charles Taragin</div>
   <div class="paper-venue">Economics Bulletin, 38(4): 2304-2312 (2018)</div>
   <div class="paper-links">
-    <a href="https://ideas.repec.org/a/ebl/ecbull/eb-18-00431.html" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
+  <a href="https://ideas.repec.org/a/ebl/ecbull/eb-18-00431.html" target="_blank"><i class="fas fa-external-link-alt"></i> Link</a>
   </div>
 </div>
 
@@ -112,7 +112,7 @@ output: bookdown::html_document2
   <div class="paper-authors">Ron Borzekowski, Raphael Thomadsen, and Charles Taragin</div>
   <div class="paper-venue">Quantitative Marketing and Economics, 7(2): 147-179 (June 2009)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.1007/s11129-009-9050-7" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://doi.org/10.1007/s11129-009-9050-7" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
   </div>
 </div>
 
@@ -126,8 +126,8 @@ output: bookdown::html_document2
   <div class="paper-authors">Charles Taragin, Benjamin Wallace, and Eddie Watkins</div>
   <div class="paper-venue">Finance and Economics Discussion Series 2025-080, Board of Governors of the Federal Reserve System (2025)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.17016/FEDS.2025.080" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-    <a href="https://github.com/luciu5/mergers_debt" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://doi.org/10.17016/FEDS.2025.080" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://github.com/luciu5/mergers_debt" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
@@ -152,7 +152,7 @@ output: bookdown::html_document2
   <div class="paper-authors">David Benson, Aaron Garner, Gloria Sheu, and Charles S. Taragin</div>
   <div class="paper-venue">April 2026</div>
   <div class="paper-links">
-    <a href="https://github.com/luciu5/supreme" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://github.com/luciu5/supreme" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
 
@@ -161,7 +161,7 @@ output: bookdown::html_document2
   <div class="paper-authors">Margaret Loudermilk, Gloria Sheu, and Charles Taragin</div>
   <div class="paper-venue">Finance and Economics Discussion Series 2023-005, Board of Governors of the Federal Reserve System (2023)</div>
   <div class="paper-links">
-    <a href="https://doi.org/10.17016/FEDS.2023.005" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
-    <a href="https://github.com/luciu5/beyond" target="_blank"><i class="fab fa-github"></i> Code</a>
+  <a href="https://doi.org/10.17016/FEDS.2023.005" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>
+  <a href="https://github.com/luciu5/beyond" target="_blank"><i class="fab fa-github"></i> Code</a>
   </div>
 </div>
