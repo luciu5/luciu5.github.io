@@ -6,12 +6,8 @@ navbar:
   left:
     - text: "Charles Taragin"
       href: index.html
-    - text: "Published"
-      href: published.html
-    - text: "Working"
-      href: working.html
-    - text: "In Progress"
-      href: progress.html
+    - text: "Papers"
+      href: papers.html
     - text: "Software"
       href: software.html
     - text: "CV"
