@@ -14,9 +14,13 @@ header-includes:
   - \definecolor{awesome-teal}{HTML}{0f766e}
   - \colorlet{awesome}{awesome-teal}
   - \geometry{left=2.2cm, top=2.2cm, right=2.2cm, bottom=2.2cm, footskip=.6cm}
-  - \renewcommand{\acvSectionTopSkip}{5.0mm}
-  - \renewcommand{\acvSectionContentTopSkip}{3.0mm}
-  - \renewenvironment{cvitems}{\vspace{-2.0mm}\begin{justify}\begin{itemize}[leftmargin=2.5ex, nosep, itemsep=3.5pt]\setlength{\parskip}{1.5pt}\renewcommand{\labelitemi}{\bullet}}{\end{itemize}\end{justify}\vspace{-2.0mm}}
+  - \renewcommand{\acvHeaderAfterNameSkip}{1.2mm}
+  - \renewcommand{\acvHeaderAfterPositionSkip}{1.0mm}
+  - \renewcommand{\acvHeaderAfterAddressSkip}{0.8mm}
+  - \renewcommand{\acvHeaderAfterSocialSkip}{8.0mm}
+  - \renewcommand{\acvSectionTopSkip}{6.5mm}
+  - \renewcommand{\acvSectionContentTopSkip}{4.0mm}
+  - \renewenvironment{cvitems}{\vspace{-1.0mm}\begin{justify}\begin{itemize}[leftmargin=2.5ex, nosep, itemsep=4.5pt]\setlength{\parskip}{2.0pt}\renewcommand{\labelitemi}{\bullet}}{\end{itemize}\end{justify}\vspace{-0.5mm}}
 ---
 
 ```{r setup, include=FALSE}

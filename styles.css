@@ -784,7 +784,7 @@ a:hover {
     }
 
     .section .paper-title {
-        font-size: 1.08rem !important;
+        font-size: 1.14rem !important;
         line-height: 1.35;
         overflow-wrap: anywhere;
     }
@@ -793,6 +793,11 @@ a:hover {
     .section .paper-venue {
         font-size: 0.95rem !important;
         line-height: 1.45;
+    }
+
+    .section .paper-contribution {
+        font-size: 0.9rem !important;
+        line-height: 1.5;
     }
 
     .paper-links {
