@@ -93,7 +93,7 @@ awards <- data.frame(when=c(2025, 2019, 2017:2014, 2010),
 
 ```
 ## Executive Summary
-Antitrust and banking economist with over 15 years of experience leading high-profile merger investigations at the Federal Reserve Board, Federal Trade Commission, and Department of Justice. Specialist in horizontal and vertical merger simulation, spatial market definition, and industrial organization. Developer of standard open-source R packages for antitrust simulation and policy analysis.
+Antitrust and competition-policy economist with over 15 years of experience leading high-profile merger investigations at the Federal Reserve Board, Federal Trade Commission, and Department of Justice. Specialist in merger review under uncertainty, horizontal and vertical merger simulation, spatial market definition, and industrial organization. Developer of standard open-source R packages for antitrust simulation and policy analysis.
 
 ## Experience
 ```{r experience}
