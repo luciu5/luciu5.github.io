@@ -11,7 +11,7 @@
 
 
 
-<title>software.knit</title>
+<title>Software and Policy Tools</title>
 
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -33,6 +33,7 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet" />
+<meta name="description" content="Charles Taragin is an antitrust and merger policy economist specializing in merger review, merger simulation, market definition, industrial organization, competition policy, and applications to banking and regulated industries.">
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -251,7 +252,7 @@ $(document).ready(function () {
   <a href="research.html">Research</a>
 </li>
 <li>
-  <a href="software.html">Software</a>
+  <a href="software.html">Software and Policy Tools</a>
 </li>
 <li>
   <a href="./CharlesTaraginCV/CharlesTaraginCV.pdf">CV</a>
@@ -279,48 +280,65 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Software and Policy Tools</h1>
 
 </div>
 
 
+<p>I develop open-source software that makes antitrust and trade-policy simulation models available to researchers, practitioners, and students. These packages implement tools for merger simulation, market definition, tariff and quota analysis, and graphical interfaces for applied competition policy.</p>
 <div id="r-packages" class="section level2">
 <h2>R Packages</h2>
-<table>
-<colgroup>
-<col width="4%" />
-<col width="13%" />
-<col width="74%" />
-<col width="7%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th align="left">package</th>
-<th align="left">title</th>
-<th align="left">description</th>
-<th align="left">public instance</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><a href="https://CRAN.R-project.org/package=antitrust">antitrust</a></td>
-<td align="left">Tools for Antitrust Practitioners</td>
-<td align="left">A collection of tools for antitrust practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of mergers under different competitive regimes.</td>
-<td align="left"></td>
-</tr>
-<tr class="even">
-<td align="left"><a href="https://CRAN.R-project.org/package=trade">trade</a></td>
-<td align="left">Tools for Trade Practitioners</td>
-<td align="left">A collection of tools for trade practitioners, including the ability to calibrate different consumer demand systems and simulate the effects of tariffs and quotas under different competitive regimes. These tools are derived from Anderson et al. (2001) <a href="doi:10.1016/S0047-2727(00)00085-2" class="uri">doi:10.1016/S0047-2727(00)00085-2</a> and Froeb et al. (2003) <a href="doi:10.1016/S0304-4076(02)00166-5" class="uri">doi:10.1016/S0304-4076(02)00166-5</a>.</td>
-<td align="left"></td>
-</tr>
-<tr class="odd">
-<td align="left"><a href="https://CRAN.R-project.org/package=competitiontoolbox">competitiontoolbox</a></td>
-<td align="left">A Graphical User Interface for Antitrust and Trade Practitioners</td>
-<td align="left">A graphical user interface for simulating the effects of mergers, tariffs, and quotas under an assortment of different economic models. The interface is powered by the ‘Shiny’ web application framework from ‘RStudio’.</td>
-<td align="left"><a href="https://daag.shinyapps.io/ct_shiny/" class="uri">https://daag.shinyapps.io/ct_shiny/</a></td>
-</tr>
-</tbody>
-</table>
+<div class="software-grid">
+<div class="software-card">
+<h3>
+antitrust
+</h3>
+<p class="software-subtitle">
+Tools for Antitrust Practitioners
+</p>
+<p>
+Implements merger simulation and calibration tools for differentiated-products demand, auctions, bargaining, vertical settings, upward pricing pressure, and related antitrust models.
+</p>
+<pre><code>install.packages("antitrust")</code></pre>
+<div class="paper-links">
+<p><a href="https://CRAN.R-project.org/package=antitrust" target="_blank"><i class="fas fa-external-link-alt"></i> CRAN</a>
+<a href="https://github.com/luciu5/antitrust" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+</div>
+</div>
+<div class="software-card">
+<h3>
+trade
+</h3>
+<p class="software-subtitle">
+Tools for Trade Policy Analysis
+</p>
+<p>
+Provides tools for simulating tariff, quota, and trade-policy effects using applied economic models that support transparent policy analysis.
+</p>
+<pre><code>install.packages("trade")</code></pre>
+<div class="paper-links">
+<p><a href="https://CRAN.R-project.org/package=trade" target="_blank"><i class="fas fa-external-link-alt"></i> CRAN</a>
+<a href="https://github.com/luciu5/trade" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+</div>
+</div>
+<div class="software-card">
+<h3>
+competitiontoolbox
+</h3>
+<p class="software-subtitle">
+Graphical Tools for Competition Policy
+</p>
+<p>
+Offers a graphical interface for selected antitrust and competition-policy tools, lowering the barrier to exploring simulation models and diagnostics.
+</p>
+<pre><code>install.packages("competitiontoolbox")</code></pre>
+<div class="paper-links">
+<p><a href="https://CRAN.R-project.org/package=competitiontoolbox" target="_blank"><i class="fas fa-external-link-alt"></i> CRAN</a>
+<a href="https://github.com/luciu5/competitiontoolbox" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+<a href="https://daag.shinyapps.io/ct_shiny/" target="_blank"><i class="fas fa-display"></i> Public Instance</a></p>
+</div>
+</div>
+</div>
 </div>
 
 <script src="script.js"></script>

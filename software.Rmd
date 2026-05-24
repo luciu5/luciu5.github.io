@@ -1,24 +1,44 @@
 ---
-title: ""
+title: "Software and Policy Tools"
 output: bookdown::html_document2
 ---
 
+I develop open-source software that makes antitrust and trade-policy simulation models available to researchers, practitioners, and students. These packages implement tools for merger simulation, market definition, tariff and quota analysis, and graphical interfaces for applied competition policy.
+
 ## R Packages
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-library(dplyr)
-library(purrr)
-library(knitr)
-```
 
-```{r rpkgs}
-urls <-c("https://CRAN.R-project.org/package=antitrust","https://CRAN.R-project.org/package=trade","https://CRAN.R-project.org/package=competitiontoolbox") 
+<div class="software-grid">
+<div class="software-card">
+<h3>antitrust</h3>
+<p class="software-subtitle">Tools for Antitrust Practitioners</p>
+<p>Implements merger simulation and calibration tools for differentiated-products demand, auctions, bargaining, vertical settings, upward pricing pressure, and related antitrust models.</p>
+<pre><code>install.packages("antitrust")</code></pre>
+<div class="paper-links">
+<a href="https://CRAN.R-project.org/package=antitrust" target="_blank"><i class="fas fa-external-link-alt"></i> CRAN</a>
+<a href="https://github.com/luciu5/antitrust" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+</div>
 
-mypkgs <- pkgsearch::ps("Taragin",size = 100) %>%
-  filter(purrr::map_lgl(package_data, ~ grepl("Charles Taragin", .x$Author, fixed = TRUE))) %>%
-  mutate(package_order = factor(package, levels = c("antitrust", "trade", "competitiontoolbox"))) %>%
-  arrange(package_order) %>% select(package,title,description) %>% mutate(package=paste0("[",package,"]","(",urls,")"), `public instance`=c("","","https://daag.shinyapps.io/ct_shiny/")) %>% mutate(description=gsub("\\s+"," ",description))
+<div class="software-card">
+<h3>trade</h3>
+<p class="software-subtitle">Tools for Trade Policy Analysis</p>
+<p>Provides tools for simulating tariff, quota, and trade-policy effects using applied economic models that support transparent policy analysis.</p>
+<pre><code>install.packages("trade")</code></pre>
+<div class="paper-links">
+<a href="https://CRAN.R-project.org/package=trade" target="_blank"><i class="fas fa-external-link-alt"></i> CRAN</a>
+<a href="https://github.com/luciu5/trade" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+</div>
+</div>
 
-kable(mypkgs)
-
-```
+<div class="software-card">
+<h3>competitiontoolbox</h3>
+<p class="software-subtitle">Graphical Tools for Competition Policy</p>
+<p>Offers a graphical interface for selected antitrust and competition-policy tools, lowering the barrier to exploring simulation models and diagnostics.</p>
+<pre><code>install.packages("competitiontoolbox")</code></pre>
+<div class="paper-links">
+<a href="https://CRAN.R-project.org/package=competitiontoolbox" target="_blank"><i class="fas fa-external-link-alt"></i> CRAN</a>
+<a href="https://github.com/luciu5/competitiontoolbox" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+<a href="https://daag.shinyapps.io/ct_shiny/" target="_blank"><i class="fas fa-display"></i> Public Instance</a>
+</div>
+</div>
+</div>

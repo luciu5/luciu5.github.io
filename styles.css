@@ -196,6 +196,109 @@ a:hover {
     line-height: 1.8;
 }
 
+.lead-statement {
+    color: var(--text-title);
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.55rem !important;
+    font-weight: 600;
+    line-height: 1.45 !important;
+    margin: 1.5rem 0 1.8rem 0;
+}
+
+.profile-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 1.75rem 0 2.5rem 0;
+}
+
+.profile-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-title);
+    background: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-sm);
+    padding: 8px 12px;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.profile-links a:hover {
+    color: #ffffff;
+    border-color: var(--accent-color);
+    background: rgba(45, 212, 191, 0.12);
+}
+
+.contribution-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin: 0 0 2.5rem 0;
+}
+
+.contribution-list div {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-left: 4px solid var(--accent-color);
+    border-radius: var(--border-radius-sm);
+    padding: 14px 16px;
+    color: var(--text-primary);
+}
+
+.impact-grid,
+.software-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin: 0.5rem 0 2.5rem 0;
+}
+
+@media(min-width: 768px) {
+    .impact-grid,
+    .software-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.impact-card,
+.software-card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-sm);
+    padding: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.impact-card h3,
+.software-card h3 {
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.impact-card p,
+.software-card p {
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 0;
+}
+
+.software-card pre {
+    margin: 1rem 0 0.5rem 0;
+    background: var(--bg-primary);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius-sm);
+    color: var(--text-primary);
+}
+
+.software-subtitle {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 0.8rem !important;
+}
+
 /* Timeline component for Resume/CV integration */
 .cv-timeline {
     position: relative;

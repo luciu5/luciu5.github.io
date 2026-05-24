@@ -87,7 +87,7 @@ awards <- data.frame(when=c(2025, 2019, 2017:2014, 2010),
 
 ```
 ## Executive Summary
-Antitrust and banking economist with over 15 years of experience leading high-profile merger investigations at the Federal Reserve Board, Federal Trade Commission, and Department of Justice. Specialist in horizontal and vertical merger simulation, spatial market definition, and industrial organization. Developer of the standard open-source R packages for antitrust simulation and policy analysis. U.S. Citizen.
+Antitrust and banking economist with over 15 years of experience leading high-profile merger investigations at the Federal Reserve Board, Federal Trade Commission, and Department of Justice. Specialist in horizontal and vertical merger simulation, spatial market definition, and industrial organization. Developer of standard open-source R packages for antitrust simulation and policy analysis.
 
 ## Experience
 ```{r experience}
@@ -185,12 +185,12 @@ detailed_entries(awards,
 ## Technical Skills & Competencies
 ```{r skills}
 skills_data <- data.frame(
-  class = c("Methods", "Programming", "Databases", "AI & LLM Tools", "Markup"),
+  class = c("Methods", "Programming", "Databases", "Markup", "Research Workflows"),
   skills = c("Merger Simulation, Structural Econometrics, Spatial Market Definition, Bargaining Models",
              "R (Core Package Developer), Python, C++, Java",
              "PostgreSQL, DuckDB, SQLite, PostGIS, MySQL",
-             "Claude Code, OpenAI APIs, Prompt Engineering",
-             "Markdown, LaTeX")
+             "Markdown, LaTeX",
+             "AI-assisted coding and research workflows")
 )
 
 detailed_entries(skills_data,
