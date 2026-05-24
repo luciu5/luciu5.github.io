@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://luciu5.bitbucket.io/sitemap.xml
+Sitemap: https://luciu5.github.io/sitemap.xml
