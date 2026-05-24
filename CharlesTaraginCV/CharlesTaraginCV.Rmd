@@ -145,16 +145,6 @@ bibliography_entries("underreview.bib")
 bibliography_entries("progress.bib")
 ```
 
-## Presentations
-```{r presentations}
-detailed_entries(presentations,
-                 what = what,
-                 when = when
-                 )
-```
-
-\pagebreak
-
 ## R Software Packages
 ```{r rpkgs}
 rpkgs <- data.frame(
@@ -169,6 +159,14 @@ detailed_entries(rpkgs,
                  what = package,
                  why = description
 )
+```
+
+## Presentations
+```{r presentations}
+detailed_entries(presentations,
+                 what = what,
+                 when = when
+                 )
 ```
 
 
@@ -186,5 +184,19 @@ detailed_entries(service,
 detailed_entries(awards,
                   what = what,
                  when = when)
+```
+
+## Technical Skills & Competencies
+```{r skills}
+skills_data <- data.frame(
+  class = c("Methods", "Programming", "Databases"),
+  skills = c("Merger Simulation, Structural Econometrics, Spatial Market Definition, Bargaining Models",
+             "R (Core Package Developer), Python, C++, Java",
+             "PostgreSQL, DuckDB, SQLite, PostGIS, MySQL")
+)
+
+detailed_entries(skills_data,
+                  what = class,
+                 why = skills)
 ```
 
