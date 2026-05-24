@@ -188,19 +188,3 @@ detailed_entries(awards,
                  when = when)
 ```
 
-## Technical Skills & Competencies
-```{r skills}
-skills_data <- data.frame(
-  class = c("Methods", "Programming", "Databases", "Markup", "Research Workflows"),
-  skills = c("Merger Simulation, Structural Econometrics, Spatial Market Definition, Bargaining Models",
-             "R (Core Package Developer), Python, C++, Java",
-             "PostgreSQL, DuckDB, SQLite, PostGIS, MySQL",
-             "Markdown, LaTeX",
-             "AI-assisted coding and research workflows")
-)
-
-detailed_entries(skills_data,
-                  what = class,
-                 why = skills)
-```
-
