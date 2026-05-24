@@ -32,7 +32,7 @@ I develop open-source software that makes antitrust and trade-policy simulation 
 
 <div class="software-card">
 <h3>competitiontoolbox</h3>
-<p class="software-subtitle">Graphical Tools for Competition Policy</p>
+<p class="software-subtitle">Graphical Tools for Competition and Tariff Policy</p>
 <p>Offers a graphical interface for selected antitrust and competition-policy tools, lowering the barrier to exploring simulation models and diagnostics.</p>
 <pre><code>install.packages("competitiontoolbox")</code></pre>
 <div class="paper-links">
