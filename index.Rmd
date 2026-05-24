@@ -7,9 +7,11 @@ output: bookdown::html_document2
   <figcaption class="cartoon-caption"><em>The Bosses of the Senate</em> by Joseph Keppler (1889). Public Domain.</figcaption>
 </figure>
 
-I am a Principal Economist at the Board of Governors of the Federal Reserve System and previously served as an economist at the Federal Trade Commission and the Department of Justice Antitrust Division. I am an antitrust and competition-policy economist whose research and software translate modern industrial organization models into practical tools for economic analysis. My work focuses on merger review under uncertainty, including market definition, merger simulation, model choice, efficiencies, financial structure, and the use of economic evidence in enforcement and policy.
+I am a Principal Economist at the Board of Governors of the Federal Reserve System and previously served as an economist at the Federal Trade Commission and the Department of Justice Antitrust Division. My research and software develop practical tools for antitrust and competition policy, with a focus on merger review, market definition, merger simulation, model choice, efficiencies, financial structure, and the use of economic evidence under uncertainty.
 
-Banking is an important application of this agenda: it has been central to U.S. merger law since Philadelphia National Bank and provides unusually rich public data for studying how market structure, prices, balance sheets, and local competition shape merger effects. Over nearly two decades of public service, I have led economic investigations and supported high-profile litigations across sectors including retail banking, semiconductors, health insurance, cinema and radio advertising, airlines, and parking services.
+Across nearly two decades of public service, I have led economic investigations and supported high-profile litigations involving retail banking, semiconductors, health insurance, cinema and radio advertising, airlines, and parking services. This experience informs a broader research agenda on how agencies, courts, and practitioners should use economic models when the evidence is informative but incomplete.
+
+Banking is one important application of this agenda: it has been central to U.S. merger law since *Philadelphia National Bank* and offers unusually rich public data for studying merger effects.
 
 ## Research and Policy Focus
 
