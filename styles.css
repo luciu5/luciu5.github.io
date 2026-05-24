@@ -564,3 +564,209 @@ a:hover {
 .info-box p {
     margin: 0;
 }
+
+/* Focused mobile polish */
+@media (max-width: 767px) {
+    body {
+        font-size: 15px;
+        line-height: 1.65;
+        padding-bottom: 48px !important;
+    }
+
+    h1,
+    h1.title {
+        font-size: 2rem !important;
+        line-height: 1.15;
+        margin-top: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+
+    h2 {
+        font-size: 1.65rem !important;
+        line-height: 1.2;
+        margin-top: 2rem;
+        margin-bottom: 1.25rem;
+    }
+
+    p {
+        margin-bottom: 1.15rem;
+    }
+
+    .main-container {
+        width: 100% !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        margin-top: 20px !important;
+    }
+
+    .navbar {
+        padding: 4px 0;
+        background-color: rgba(11, 15, 25, 0.96) !important;
+    }
+
+    .navbar .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .navbar-header .navbar-toggle {
+        margin-right: 0;
+        padding: 9px 10px;
+        border-radius: var(--border-radius-sm);
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid var(--card-border) !important;
+        box-shadow: none !important;
+        max-height: calc(100vh - 64px);
+    }
+
+    .navbar-inverse .navbar-nav {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        font-size: 1rem;
+        padding: 12px 10px;
+        min-height: 44px;
+    }
+
+    .navbar-right {
+        display: flex;
+        gap: 8px;
+        padding-left: 0;
+        margin-left: 0 !important;
+    }
+
+    .navbar-right > li > a {
+        min-width: 44px;
+        text-align: center;
+    }
+
+    #charles-taragin {
+        gap: 1.25rem;
+        padding-top: 0.5rem;
+    }
+
+    #charles-taragin p,
+    .main-container > p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    #historical-cartoon-container {
+        margin: 0.5rem 0 1rem 0;
+    }
+
+    #historical-cartoon {
+        width: 100% !important;
+        max-width: 520px;
+        border-radius: var(--border-radius-sm) !important;
+    }
+
+    #historical-cartoon:hover {
+        transform: none;
+    }
+
+    .cartoon-caption {
+        font-size: 0.78rem;
+        line-height: 1.45;
+        margin-top: 8px;
+    }
+
+    .paper-entry {
+        margin-bottom: 1.35rem;
+        line-height: 1.5;
+    }
+
+    .section .paper-title {
+        font-size: 1.08rem !important;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .section .paper-authors,
+    .section .paper-venue {
+        font-size: 0.95rem !important;
+        line-height: 1.45;
+    }
+
+    .paper-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .section .paper-links a,
+    .paper-link-btn,
+    .abstract-toggle-btn {
+        display: inline-flex;
+        align-items: center;
+        min-height: 40px;
+        padding: 7px 10px;
+        margin-right: 0 !important;
+        line-height: 1.2;
+    }
+
+    .section .paper-links a {
+        color: var(--accent-color);
+        font-size: 0.9rem;
+    }
+
+    .research-controls {
+        padding: 14px;
+        margin-bottom: 1.5rem;
+    }
+
+    .search-input {
+        min-height: 42px;
+        font-size: 1rem;
+    }
+
+    .csl-entry {
+        padding: 18px 18px 18px 20px;
+        margin-bottom: 18px;
+    }
+
+    .section table {
+        display: block;
+        width: 100% !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        border-radius: var(--border-radius-sm) !important;
+    }
+
+    .section th,
+    .section td {
+        min-width: 140px;
+        padding: 12px 14px !important;
+        font-size: 0.9rem !important;
+        white-space: normal;
+    }
+
+    .section th:nth-child(3),
+    .section td:nth-child(3) {
+        min-width: 260px;
+    }
+
+    .section td a[href*="package="],
+    .section td a[href*="shinyapps.io"] {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        white-space: normal;
+    }
+
+    .section td a[href*="package="] {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+
+    .section td a[href*="shinyapps.io"] {
+        display: inline-flex;
+        align-items: center;
+        line-height: 1.25;
+        padding: 8px 10px;
+    }
+}
