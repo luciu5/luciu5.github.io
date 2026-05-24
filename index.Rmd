@@ -12,25 +12,3 @@ I am a Principal Economist at the Board of Governors of the Federal Reserve Syst
 Across nearly two decades of public service, I have led economic investigations and supported high-profile litigations involving retail banking, semiconductors, health insurance, cinema and radio advertising, airlines, and parking services. This experience informs a broader research agenda on how agencies, courts, and practitioners should use economic models when the evidence is informative but incomplete.
 
 Banking is one important application of this agenda: it has been central to U.S. merger law since *Philadelphia National Bank* and offers unusually rich public data for studying merger effects.
-
-## Research and Policy Focus
-
-<div class="impact-grid">
-<div class="impact-card">
-<h3>Antitrust and Competition Policy</h3>
-<p>I study how quantitative models can inform antitrust enforcement and competition policy, with a primary focus on merger review across horizontal, vertical, labor/product, and complex settings.</p>
-</div>
-<div class="impact-card">
-<h3>Open-Source Antitrust and Policy Tools</h3>
-<p>I develop software that makes standard antitrust and trade-policy simulation models available in reproducible, practitioner-facing form.</p>
-</div>
-<div class="impact-card">
-<h3>Market Definition and Screening Under Uncertainty</h3>
-<p>My work examines how screens, geographic markets, and predicted effects depend on assumptions about conduct, demand, and market boundaries.</p>
-</div>
-<div class="impact-card">
-<h3>Applications to Banking and Regulated Industries</h3>
-<p>I apply general antitrust and merger-review tools to banking and regulated markets, using them as key laboratories to study market definition, concentration, and merger effects with rich empirical data.</p>
-</div>
-</div>
-
