@@ -11,4 +11,4 @@ I am a Principal Economist at the Board of Governors of the Federal Reserve Syst
 
 Across nearly two decades of public service, I have led economic investigations and supported high-profile litigations involving retail banking, semiconductors, health insurance, cinema and radio advertising, airlines, and parking services. Banking is an important application of this broader agenda: it has been central to U.S. merger law since *Philadelphia National Bank* and offers unusually rich public data for studying merger effects.
 
-To support this enforcement and policy analysis, I develop open-source software—including the R packages `antitrust`, `trade`, and `mergersim`—that translates modern structural industrial organization models into practical quantitative tools.
+To support this enforcement and policy analysis, I develop open-source software—including the R packages `antitrust`, `trade`, and `competitiontoolbox`—that translates modern structural industrial organization models into practical quantitative tools.
