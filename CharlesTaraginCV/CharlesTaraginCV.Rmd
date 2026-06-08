@@ -129,7 +129,6 @@ detailed_entries(education,
                  where = inst)
 ```
 
-\pagebreak
 ## Publications
 ```{r publications}
 bibliography_entries("published.bib")
